@@ -8,7 +8,7 @@ zokou({ nomCom: "proprio", categorie: "Général", reaction: "💞" }, async (de
   const thsudo = await isSudoTableNotEmpty()
 
   if (thsudo) {
-     let msg = `*Zokou Super-User*\n
+     let msg = `*terra Super-User*\n
      *Numero proprietaire\n* :
 - 🌟 @${conf.NUMERO_OWNER}
 
@@ -19,7 +19,7 @@ zokou({ nomCom: "proprio", categorie: "Général", reaction: "💞" }, async (de
    for ( const sudo of sudos) {
     if (sudo) { // Vérification plus stricte pour éliminer les valeurs vides ou indéfinies
       sudonumero = sudo.replace(/[^0-9]/g, '');
-      msg += `- 💼 @${sudonumero}\n`;
+      msg += `- ♥️ @${sudonumero}\n`;
     } else {return}
 
    }   const ownerjid = conf.NUMERO_OWNER.replace(/[^0-9]/g) + "@s.whatsapp.net";
@@ -29,7 +29,7 @@ zokou({ nomCom: "proprio", categorie: "Général", reaction: "💞" }, async (de
       zk.sendMessage(
         dest,
         {
-          image : { url : 'https://furansujapon.com/wp-content/uploads/2023/03/Saitama-dans-One-Punch-Man-1052x592.jpg'},
+          image : { url : 'https://i.imgur.com/GpxigDJ.jpeg'},
           caption : msg,
           mentions : mentionedJid
         }
@@ -51,16 +51,15 @@ zokou({ nomCom: "proprio", categorie: "Général", reaction: "💞" }, async (de
   }
 });
 
-zokou({ nomCom: "dev", categorie: "Général", reaction: "💞" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "dev", categorie: "Général", reaction: "😶‍🌫️" }, async (dest, zk, commandeOptions) => {
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
-      { nom: "Djalega++", numero: "22559763447" },
-      { nom: "᚛M๏𝓷keℽ D Lบffy᚜", numero: "22891733300" },
+      { nom: "David", numero: "24160338758" }
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
-    let message = "👋 Bienvenue chez Zokou ! Voici les développeurs :\n\n";
+    let message = "👋 Bienvenue chez TERASSAKI ! Voici les développeurs :\n\n";
     for (const dev of devs) {
       message += `----------------\n• ${dev.nom} : https://wa.me/${dev.numero}\n`;
     }
@@ -94,8 +93,8 @@ else {
 zokou({ nomCom: "support", categorie: "Général" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, auteurMessage, } = commandeOptions; 
  
-  repondre("Veillez voir la discussion privé pour le lien svp ")
-  await zk.sendMessage(auteurMessage,{text : `https://chat.whatsapp.com/H6oeuhfSMtV1Orjmf2NVnl`},{quoted :ms})
+  repondre("REGARDE TA DISCUSSION PRIVÉE MASTER ")
+  await zk.sendMessage(auteurMessage,{text : `https://whatsapp.com/channel/0029VaydjpS7z4kekYAreA2Y`},{quoted :ms})
 
 })
 
