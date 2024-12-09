@@ -36,7 +36,7 @@ zokou({
 *Lien :* _${videos[0].url}_
 
 
-_*En cours de téléchargement...*_\n\n`
+_𝚄𝙽 𝙸𝙽𝚂𝚃𝙰𝙽𝚃 𝙱𝚄𝙳𝙳𝚈 𝚃𝙴𝙻𝙴Ç𝙷𝙰𝚁𝙶𝙴𝙼𝙴𝙽𝚃 𝙴𝙽 𝙲𝙾𝚄𝚁𝚂.._\n\n`
        }
 
       
@@ -134,7 +134,7 @@ zokou({
         caption: `*nom de la vidéo :* _${Element.title}_
 *Durée :* _${Element.timestamp}_
 *Lien :* _${Element.url}_
-_*En cours de téléchargement...*_\n\n`
+_𝚄𝙽 𝙸𝙽𝚂𝚃𝙰𝙽𝚃 𝙱𝚄𝙳𝙳𝚈 𝚃𝙴𝙻𝙴𝙲𝙷𝙰𝚁𝙶𝙴𝙼𝙴𝙽𝚃 𝙴𝙽 𝙲𝙾𝚄𝚁𝚂..._\n\n`
       };
 
       zk.sendMessage(origineMessage, InfoMess, { quoted: ms });
