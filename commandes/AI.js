@@ -11,7 +11,7 @@ zokou({nomCom:"bot",reaction:"📡",categorie:"IA"},async(dest,zk,commandeOption
   const {repondre,ms,arg}=commandeOptions;
   
     if(!arg || !arg[0])
-    {return repondre("oui je vous ecoute.")}
+    {return repondre("ouais mon type?.")}
     //var quest = arg.join(' ');
   try{
     
@@ -58,7 +58,7 @@ zokou({ nomCom: "dalle", reaction: "📡", categorie: "IA" }, async (dest, zk, c
     const response = await axios.get(`https://vihangayt.me/tools/photoleap?q=${image}`);
     
     const data = response.data;
-    let caption = '*Propulsé par ZOKOU-MD*';
+    let caption = 'Generer par TERRA MD ';
     
     if (data.status && data.owner && data.data) {
       // Utiliser les données retournées par le service
