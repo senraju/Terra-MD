@@ -23,7 +23,7 @@ function createCanvacordCommand(commandName, canvacordFunction) {
         
         img = await zk.profilePictureUrl(auteurMsgRepondu, 'image'); }
       } else {
-        img = "https://i.pinimg.com/564x/84/09/12/840912dd744e6662ab211b8070b5d84c.jpg";
+        img = "https://raw.githubusercontent.com/DADDY-IGWE/Terra-MD/refs/heads/main/Terra.jpg";
       }
 
       const result = await canvacordFunction(img);
