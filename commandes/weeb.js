@@ -127,10 +127,10 @@ return repondre("😋😋");
 });
 
 
-zokou({nomCom:"couplepp",categorie: "Weeb",reaction : "💞"},async(dest,zk,commandeOptions)=>{ const {repondre , ms} = commandeOptions;
+zokou({nomCom:"couplepp",categorie: "Weeb",reaction : "🤭"},async(dest,zk,commandeOptions)=>{ const {repondre , ms} = commandeOptions;
     let api = 'https://smiling-hosiery-bear.cyclic.app/weeb/couplepp'
   try {
-     repondre('apres c\'est pour prendre goumin')
+     repondre('fait comme Balthasar!!')
  const result = await axios.get(api)
   
 
