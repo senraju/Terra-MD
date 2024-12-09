@@ -3,7 +3,7 @@ const axios =require("axios");
 
 
 zokou({ nomCom: "lyrics",
-        reaction: "✨",
+        reaction: "📃",
         categorie: "Recherche" }, async (dest, zk, commandeOptions) => {
     
     const { repondre, arg, ms } = commandeOptions;  
@@ -18,7 +18,7 @@ zokou({ nomCom: "lyrics",
 
     if (lyrics.error) return repondre("Aucun résultat trouvé");
 
-    let msg = `---------ZK-lyrics-finder--------
+    let msg = `----------𝐓𝐄𝐑𝐑𝐀 𝐋𝐘𝐑𝐈𝐂 𝐅𝐈𝐍𝐃𝐄𝐑--------
 
 * *Artiste :* ${lyrics.artist}
 
