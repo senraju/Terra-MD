@@ -49,7 +49,7 @@ zokou({ nomCom: "tgs", categorie: "Mods" }, async (dest, zk, commandeOptions) =>
       type = 'Stickers non animé'
     }
 
-    let msg = `   Zk-stickers-dl
+    let msg = `   Terra-stickers-dl
     
 *nom :* ${stickers.data.result.name}
 *Type :* ${type} 
@@ -72,7 +72,7 @@ zokou({ nomCom: "tgs", categorie: "Mods" }, async (dest, zk, commandeOptions) =>
 
         const sticker = new Sticker(buffer.data, {
           pack: nomAuteurMessage,
-          author: "Zokou-md",
+          author: "TERRA-MD",
           type: StickerTypes.FULL,
           categories: ['🤩', '🎉'],
           id: '12345',
@@ -214,7 +214,7 @@ zokou({ nomCom: "jid", categorie: "Mods" }, async (dest, zk, commandeOptions) =>
           let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
   
           let stickerMess = new Sticker(media, {
-            pack: 'Zokou-tag',
+            pack: 'TERRA-TAG',
             type: StickerTypes.CROPPED,
             categories: ["🤩", "🎉"],
             id: "12345",
@@ -291,7 +291,7 @@ zokou({ nomCom: "deblock", categorie: "Mods" }, async (dest, zk, commandeOptions
   
     });
 
-zokou({ nomCom: "purge", categorie: "Groupe", reaction: "📣" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "purge", categorie: "Groupe", reaction: "😈" }, async (dest, zk, commandeOptions) => {
 
   const { auteurMessage ,ms, repondre, arg, verifGroupe, nomGroupe, infosGroupe, nomAuteurMessage, verifAdmin, superUser,prefixe } = commandeOptions
 
@@ -544,7 +544,7 @@ zokou({
 -Pour activer ou modifier le mention ; suivez ce synax : mention lien type message
 Les differents type sont audio video image sticker
       
-exemple : mention https://static.animecorner.me/2023/08/op2.jpg image Salut moi c'est luffy`) ; return}
+exemple : mention https://static.animecorr.me/2023/08/op2.jpg image Salut moi c'est David`) ; return}
 
           if(data.status == 'non') {
               etat = 'Desactiver'
@@ -565,7 +565,7 @@ exemple : mention https://static.animecorner.me/2023/08/op2.jpg image Salut moi 
 -Pour activer ou modifier le mention ; suivez ce synax : mention lien type message
 Les differents type sont audio video image sticker
 
-exemple : mention https://static.animecorner.me/2023/08/op2.jpg image Salut moi c'est Luffy
+exemple : mention https://static.animecorner.me/2023/08/op2.jpg image Salut moi c'est David 
 
 -Pour stoper le mention ; utiliser mention stop` ;
 
