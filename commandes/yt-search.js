@@ -21,8 +21,8 @@ zokou({ nomCom: "yts", categorie: "Recherche", reaction: "✋" }, async (dest, z
     for (let i = 0; i < 10; i++) {
       captions += `----------------\nTitre : ${resultat[i].title}\nDurée : ${resultat[i].timestamp}\nLien : ${resultat[i].url}\n`;
     }
-    captions += "\n======\n*powered by Zokou-Md*";
-
+    captions += "\n======\n𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙸𝙶𝚆𝙴 𝚃𝙴𝙲𝙷™";
+    
     // repondre(captions)
     zk.sendMessage(dest, { image: { url: resultat[0].thumbnail }, caption: captions }, { quoted: ms });
   } catch (error) {
