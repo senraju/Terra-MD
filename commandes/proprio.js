@@ -19,7 +19,7 @@ const{repondre,ms,dev,superUser}=com;
 
   const {exec}=require("child_process") ;
 
-    repondre("* Redémarrage du bot en cour ...*");
+    repondre("𝐫𝐞𝐝𝐞𝐦𝐚𝐫𝐫𝐚𝐠𝐞 𝐝𝐞 𝐓𝐄𝐑𝐑𝐀 𝐞𝐛 𝐜𝐨𝐮𝐫 𝐦𝐚𝐬𝐭𝐞𝐫!..");
 
   exec("pm2 restart all");
   
