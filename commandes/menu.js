@@ -6,7 +6,7 @@ const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
 
-zokou({ nomCom: "menu", reaction:"📱",categorie: "Général" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "menu", reaction:"🧞‍♂️",categorie: "Général" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
@@ -40,8 +40,8 @@ const date = moment().format('DD/MM/YYYY');
 │   *Heure* : ${temps}
 │   *Mémoire* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 │   *Plateforme* : ${os.platform()}
-│   *Développeurs* : DAVID @DADDY-IGWE
-╰─────✧•TERRA~MD•✧─────◆ \n\n`;
+│   *Développeurs* : 𝐃𝐀𝐃𝐃𝐘 𝐈𝐆𝐖𝐄 ©
+╰─────✧𝐓𝐄𝐑𝐑𝐀 𝐌𝐃✧─────◆ \n\n`;
     
 let menuMsg = `
 👋 salam ${nomAuteurMessage} 👋
@@ -65,7 +65,7 @@ let menuMsg = `
 *»»————— ★ —————««*
 Pour utiliser  une  commande, tapez  ${prefixe}"nom de la commande"
  
- powered by igwetech incorporate 
+ 𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲: 𝐈𝐆𝐖𝐄~𝐓𝐄𝐂𝐇 𝐢𝐧𝐜.
                                                 
 *»»————— ★ —————««*
 `;
