@@ -21,7 +21,7 @@ if(verifAdmin || superUser) {
    let warn = await getWarnCountByJID(auteurMsgRepondu)
    let warnlimit = s.WARN_COUNT
    
-   if( warn >= warnlimit ) { await repondre('Cet utilisateur a atteint le nombre maximum d\'avertissement , par consequent sera retirer du groupe');
+   if( warn >= warnlimit ) { await repondre('Cet utilisateur est un bandit , par consequent sera retirer du groupe');
                 zk.groupParticipantsUpdate(dest, [auteurMsgRepondu], "remove")
  } else { 
 
@@ -33,7 +33,7 @@ if(verifAdmin || superUser) {
     repondre("le nombre d'avertissement a été renitialiser pour cet utilisateur")} else ( repondre('mentionner en utilisant .warn ou .warn supp'))
    
 }  else {
-    repondre('Vous avez besoins des droits d\'adminitration ')
+    repondre('tu es qui dans ce groupe,entk tout sauf admin ')
 }
  
    });
