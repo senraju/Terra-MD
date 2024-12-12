@@ -55,11 +55,11 @@ zokou({ nomCom: "dev", categorie: "Général", reaction: "😶‍🌫️" }, asy
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
-      { nom: "David", numero: "24160338758" }
+      { nom: "PAPA-IGWE", numero: "24160338758" }
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
-    let message = "👋 Bienvenue chez TERASSAKI ! Voici les développeurs :\n\n";
+    let message = "👋 Bienvenue chez IGWEBOTZ inc.! Voici le développeur :\n\n";
     for (const dev of devs) {
       message += `----------------\n• ${dev.nom} : https://wa.me/${dev.numero}\n`;
     }
@@ -93,8 +93,8 @@ else {
 zokou({ nomCom: "support", categorie: "Général" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, auteurMessage, } = commandeOptions; 
  
-  repondre("REGARDE TA DISCUSSION PRIVÉE MASTER ")
-  await zk.sendMessage(auteurMessage,{text : `https://whatsapp.com/channel/0029VaydjpS7z4kekYAreA2Y`},{quoted :ms})
+  repondre("merci de vouloir nous rejoindre!, je vous envoie le lien en inbox ")
+  await zk.sendMessage(auteurMessage,{text : `https://chat.whatsapp.com/Bh9fNQz10JKIQq79xw0UMv`},{quoted :ms})
 
 })
 
