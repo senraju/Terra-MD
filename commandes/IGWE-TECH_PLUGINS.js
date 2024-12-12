@@ -514,7 +514,7 @@ zokou({
 
 zokou({ 
 
-  nomCom: "famous-tech",
+  nomCom: "igwe-tech",
 
   categorie: "IGWE-PLGNS",
 
