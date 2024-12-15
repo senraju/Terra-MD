@@ -522,7 +522,7 @@ zokou({
 
   desc: "Affiche les informations sur l'auteur des commandes.",
 
-  alias: ["ft"]
+  alias: ["it"]
 
 }, async (origineMessage, zk, commandeOptions) => {
 
