@@ -15,8 +15,8 @@ NB: NOUS UTILISONS LA SESSION GENERATOR DE ZOKOU pour le moment
     <a href='https://zokouscan-din3.onrender.com/' target="_blank">
         <img alt='SESSION' src='https://img.shields.io/badge/Get%20Session%20ID-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=blue'/>
     </a>
-     <a href="https://chat.whatsapp.com/Bh9fNQz10JKIQq79xw0UMv">
-        <img alt="WhatsApp" src="https://img.shields.io/badge/-Whatsapp%20group-green?style=for-the-badge&logo=whatsapp&logoColor=black"/>
+     <a href="https://whatsapp.com/channel/0029Vb2VplFFCCoQsZKtVV24">
+        <img alt="WhatsApp" src="https://img.shields.io/badge/-Whatsapp%20channel❤️-green?style=for-the-badge&logo=whatsapp&logoColor=black"/>
     </a>
 </p>
 
@@ -59,3 +59,12 @@ Use Render for deployment to take advantage of auto-scaling and global distribut
 Deploy to Railway for a serverless experience and ease of use with GitHub integration. [Create Account](https://railway.app/)
 
 ---
+**WARN🚨**:
+
+ce repo est unique donc non copiable et protégé par la licence. [**MIT**](https://mit.license.com)
+
+**CREATOR**
+[**DADDY-IGWE**](https://wa.me/24105730123)
+<p align="center">
+<img src="https://i.ibb.co/kytvWQq/Manul-Ofc-X.jpg" />
+</p>
