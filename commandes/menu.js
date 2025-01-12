@@ -31,20 +31,20 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╭────✧${s.BOT}✧────◆
-│   *Préfixe* : ${s.PREFIXE}
-│   *Owner* : ${s.NOM_OWNER}
-│   *Mode* : ${mode}
-│   *Commandes* : ${cm.length}
-│   *Date* : ${date}
-│   *Heure* : ${temps}
-│   *Mémoire* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│   *Plateforme* : ${os.platform()}
-│   *Développeurs* : 𝐃𝐀𝐃𝐃𝐘 𝐈𝐆𝐖𝐄 ©
-╰─────✧𝐓𝐄𝐑𝐑𝐀 𝐌𝐃✧─────◆ \n\n`;
+╭━━━━━━━━━━━━━━━━━━━━◆
+┃   *Préfixe* : ${s.PREFIXE}
+┃   *Owner* : ${s.NOM_OWNER}
+┃   *Mode* : ${mode}
+┃    *Commandes* : ${cm.length}
+┃   *Date* : ${date}
+┃   *Heure* : ${temps}
+┃   *Mémoire* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+┃  *Plateform* : ${os.platform()}
+┃   *Dev* : 𝐃𝐀𝐃𝐃𝐘-𝐈𝐆𝐖𝐄 ©
+╰━━━━━━━━━━━━━━━━━━━━◆ \n\n`;
     
 let menuMsg = `
-👋 salam ${nomAuteurMessage} 👋
+🫵🏽🌟SALUT ${nomAuteurMessage} 👋
 
 *Voici ce dont je suis capable :*
 ◇                             ◇
@@ -62,12 +62,11 @@ let menuMsg = `
 
     menuMsg += `
 ◇            ◇
-*»»————— ★ —————««*
-Pour utiliser  une  commande, tapez  ${prefixe}"nom de la commande"
- 
+*====== ★ ======*
+
  𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲: 𝐈𝐆𝐖𝐄~𝐓𝐄𝐂𝐇 𝐢𝐧𝐜.
                                                 
-*»»————— ★ —————««*
+*====== ★ ======*
 `;
 
     

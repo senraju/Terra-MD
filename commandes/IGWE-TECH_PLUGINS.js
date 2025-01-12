@@ -454,7 +454,7 @@ zokou({
 
     garçon: [
 
-      "Tu es mon héros.",
+      "Tu es mon igwe.",
 
       "Tu es mon rocher.",
 
@@ -528,7 +528,7 @@ zokou({
 
   const { ms, msgRepondu, arg, repondre, nomAuteurMessage } = commandeOptions;
 
-  const info = `Je crée moi mm mes plugins si vous voulez me contacter ecrivez via WhatsApp : https://wa.me/24160338758`;
+  const info = `Je crée moi mm mes plugins si vous voulez me contacter ecrivez via WhatsApp : https://wa.me/24105730123`;
 
   zk.sendMessage(origineMessage, { text: info });
 

@@ -94,6 +94,9 @@ const devinettes = [
     question: "Je suis difficile à saisir, mais vous me tiendrez dans votre main lorsque vous me trouverez. Qui suis-je ?",
     reponse: "Votre souffle",
   },
+  {
+    question: "Mon pseudo commence par un i et termine par un e. Qui suis-je?",
+    reponse: "IGWE"
   ];
   
 zokou({ nomCom: "devinette", categorie: "Games" }, async (dest, zk, commandeOptions) => {

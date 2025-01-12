@@ -9,7 +9,7 @@ const { exec } = require("child_process");
 
 
 
-zokou({nomCom:"sticker",categorie: "Conversion", reaction: "👨🏿‍💻"},async(origineMessage,zk,commandeOptions)=>{
+zokou({nomCom:"sticker",categorie: "Conversion", reaction: "⚖️"},async(origineMessage,zk,commandeOptions)=>{
 
 let {ms,mtype,arg,repondre,nomAuteurMessage}=commandeOptions
   var txt=JSON.stringify(ms.message)
@@ -134,7 +134,7 @@ mediamsg = msgRepondu.videoMessage
 
 });
 
-zokou({nomCom:"jeprend",categorie: "Conversion", reaction: "👨🏿‍💻"},async(origineMessage,zk,commandeOptions)=>{
+zokou({nomCom:"take",categorie: "Conversion", reaction: "👨🏿‍💻"},async(origineMessage,zk,commandeOptions)=>{
    const {ms , msgRepondu,arg,repondre,nomAuteurMessage} = commandeOptions ;
 
   if(!msgRepondu) { repondre( 'veiller mentionner le media' ) ; return } ;

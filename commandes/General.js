@@ -2,17 +2,17 @@ const { zokou } = require("../framework/zokou");
 const {getAllSudoNumbers,isSudoTableNotEmpty} = require("../bdd/sudo")
 const conf = require("../set");
 
-zokou({ nomCom: "proprio", categorie: "Général", reaction: "💞" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "proprio", categorie: "Général", reaction: "🤙🏽" }, async (dest, zk, commandeOptions) => {
     const { ms , mybotpic } = commandeOptions;
     
   const thsudo = await isSudoTableNotEmpty()
 
   if (thsudo) {
-     let msg = `*terra Super-User*\n
+     let msg = `*terra proprio*\n
      *Numero proprietaire\n* :
-- 🌟 @${conf.NUMERO_OWNER}
+- 🌟 @${conf.NUMERO_OWNER} 🌟
 
------- *Autre sudos* -----\n`
+------ *Autre proprio* -----\n`
      
  let sudos = await getAllSudoNumbers()
 
@@ -29,7 +29,7 @@ zokou({ nomCom: "proprio", categorie: "Général", reaction: "💞" }, async (de
       zk.sendMessage(
         dest,
         {
-          image : { url : 'https://i.imgur.com/GpxigDJ.jpeg'},
+          image : { url : 'https://i.ibb.co/pKBtz85/Manul-Ofc-X.jpg'},
           caption : msg,
           mentions : mentionedJid
         }
@@ -51,11 +51,11 @@ zokou({ nomCom: "proprio", categorie: "Général", reaction: "💞" }, async (de
   }
 });
 
-zokou({ nomCom: "dev", categorie: "Général", reaction: "😶‍🌫️" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "dev", categorie: "Général", reaction: "🎖" }, async (dest, zk, commandeOptions) => {
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
-      { nom: "PAPA-IGWE", numero: "24160338758" }
+      { nom: "PAPA-IGWE", numero: "24105730123" }
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
@@ -94,7 +94,7 @@ zokou({ nomCom: "support", categorie: "Général" }, async (dest, zk, commandeOp
   const { ms, repondre, auteurMessage, } = commandeOptions; 
  
   repondre("merci de vouloir nous rejoindre!, je vous envoie le lien en inbox ")
-  await zk.sendMessage(auteurMessage,{text : `https://chat.whatsapp.com/Bh9fNQz10JKIQq79xw0UMv`},{quoted :ms})
+  await zk.sendMessage(auteurMessage,{text : `https://whatsapp.com/channel/0029Vb2VplFFCCoQsZKtVV24`},{quoted :ms})
 
 })
 

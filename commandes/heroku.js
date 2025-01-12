@@ -11,7 +11,7 @@ zokou(
        const {ms,repondre,superUser , arg} = commandeOptions ;
        
        if(!superUser){repondre('Commande reserver au proprietaire du bot');return};
-       if(!arg[0] || !(arg.join('').split('='))) {repondre('Mauvais formats ; voici le mode d\'emploie.\nSetvar NOM_OWNER=Fredora');return};
+       if(!arg[0] || !(arg.join('').split('='))) {repondre('Mauvais formats ; voici le mode d\'emploie.\nSetvar NOM_OWNER=IGWE');return};
      
     const text = arg.join(" ")
      const Heroku = require("heroku-client");

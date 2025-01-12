@@ -11,7 +11,7 @@ zokou({nomCom:"bot",reaction:"📡",categorie:"IA"},async(dest,zk,commandeOption
   const {repondre,ms,arg}=commandeOptions;
   
     if(!arg || !arg[0])
-    {return repondre("ouais mon type?.")}
+    {return repondre("salut que pui-je faire pour toi ?.")}
     //var quest = arg.join(' ');
   try{
     
@@ -78,7 +78,7 @@ zokou({ nomCom: "gpt", reaction: "📡", categorie: "IA" }, async (dest, zk, com
 
   try {
     if (!arg || arg.length === 0) {
-      return repondre(`Veuillez poser une questions.`);
+      return repondre(`Veuillez poser une questions a terra.`);
     }
 
     // Regrouper les arguments en une seule chaîne séparée par "-"

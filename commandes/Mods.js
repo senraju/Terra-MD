@@ -298,10 +298,10 @@ zokou({ nomCom: "purge", categorie: "Groupe", reaction: "😈" }, async (dest, z
   const metadata = await zk.groupMetadata(dest) ;
  
 
-  if (!verifGroupe) { repondre("✋🏿 ✋🏿cette commande est réservée aux groupes ❌"); return; }
+  if (!verifGroupe) { repondre("🚨cette commande est réservée aux groupes ❌"); return; }
   if (superUser || auteurMessage == metadata.owner) { 
   
-   repondre('Les membres non admins seront retiré du groupe vous avez 5 secondes pour revandiquer votre choix en redemarrant le bot') ;
+   repondre('Les membres non admins seront retiré du groupe veillez taper .redemarer pour revandiquer votre choix🚨') ;
    await sleep(5000)
   let membresGroupe = verifGroupe ? await infosGroupe.participants : "";
 try {
@@ -322,7 +322,7 @@ await zk.groupParticipantsUpdate(
     
   }  
 } catch (e) {repondre("j'ai besoins des droit d'administration")} } else {
-  repondre("Commande reserver au proprietaire du groupe pour des raisons de securitée"); return
+  repondre("Commande reserver au proprietaire du groupe"); return
 }
 });
 

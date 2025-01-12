@@ -12,7 +12,7 @@ zokou(
 
    const {ms , arg, repondre,superUser , msgRepondu} = commandeOptions;
 
-    if (!superUser) { repondre('commande reservé au moderateur') ; return} ;
+    if (!superUser) { repondre('commande reservé au proprio') ; return} ;
 
       if(msgRepondu && msgRepondu.stickerMessage )  {
   

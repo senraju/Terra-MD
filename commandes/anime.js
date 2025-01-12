@@ -42,7 +42,7 @@ zokou({
   const { arg, repondre } = commandeOptions;
   
   if (!arg[0] || arg === "") {
-    repondre("Donnez-moi une requête.\n*Exemple : .google Qui est Suhail Tech.*");
+    repondre("Donnez-moi une requête.\n*Exemple : .google Qui est igwe Tech.*");
     return;
   }
 

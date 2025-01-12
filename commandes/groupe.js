@@ -11,14 +11,14 @@ const { recupevents } = require('../bdd/welcome');
 const {exec}=require("child_process") ;
 
 
-zokou({ nomCom: "appel", categorie: "Groupe", reaction: "🚨" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "tagall", categorie: "Groupe", reaction: "📯" }, async (dest, zk, commandeOptions) => {
 
   const { ms, repondre, arg, verifGroupe, nomGroupe, infosGroupe, nomAuteurMessage, verifAdmin, superUser } = commandeOptions
 
 
  
 
-  if (!verifGroupe) { repondre("✋🏿 ✋🏿cette commande est réservée aux groupes ❌"); return; }
+  if (!verifGroupe) { repondre("🚨cette commande est réservée aux groupes ❌"); return; }
   if (!arg || arg === ' ') {
   mess = 'Aucun Message'
   } else {
@@ -26,8 +26,8 @@ zokou({ nomCom: "appel", categorie: "Groupe", reaction: "🚨" }, async (dest, z
   } ;
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   var tag = ""; 
-  tag += `========================\n  
-        ⳻᷼⳺ 𝚃𝙴𝚁𝚁𝙰 𝙼𝙳 ⳻᷼⳺
+  tag += `=======================\n  
+      ⳻᷼⳺ 𝚃𝙴𝚁𝚁𝙰 𝙼𝙳 ⳻᷼⳺
 ========================\n
 👥 Groupe : ${nomGroupe} 🚀 
 👤 Auteur : *${nomAuteurMessage}* 👋 
@@ -58,7 +58,7 @@ zokou({ nomCom: "appel", categorie: "Groupe", reaction: "🚨" }, async (dest, z
 });
 
 
-zokou({ nomCom: "lien", categorie: "Groupe", reaction: "🙋" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "lien", categorie: "Groupe", reaction: "🔗" }, async (dest, zk, commandeOptions) => {
   const { repondre, nomGroupe, nomAuteurMessage, verifGroupe } = commandeOptions;
   if (!verifGroupe) { repondre("wait bro , tu veux le lien de mon dm?"); return; };
 
@@ -74,14 +74,14 @@ Lien :${lien}`
 
 });
 /** *nommer un membre comme admin */
-zokou({ nomCom: "nommer", categorie: "Groupe", reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "nommer", categorie: "Groupe", reaction: "🫡" }, async (dest, zk, commandeOptions) => {
   let { repondre, msgRepondu, infosGroupe, auteurMsgRepondu, verifGroupe, auteurMessage, superUser, idBot } = commandeOptions;
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   if (!verifGroupe) { return repondre("Pour les groupe uniquement"); }
 
   const met = await zk.groupMetadata(dest) ;
 
-  if(await recupevents(dest,'antipromote') == 'oui' && (met.author =! auteurMessage) )  { repondre('Vous avez pas droit de Nommer des participants car le antipromote est actif') ; return} ;
+  if(await recupevents(dest,'antipromote') == 'oui' && (met.author =! auteurMessage) )  { repondre('Vous avez pas droit de Nommer des participants car le antipromote est actif🚨') ; return} ;
 
 
   const verifMember = (user) => {
@@ -121,7 +121,7 @@ zokou({ nomCom: "nommer", categorie: "Groupe", reaction: "👨🏿‍💼" }, as
         if (zkad) {
           if (membre) {
             if (admin == false) {
-              var txt = `🎊🎊🎊  @${auteurMsgRepondu.split("@")[0]} est monté(e) en grade.\n
+              var txt = `🎊🎊🎊  @${auteurMsgRepondu.split("@")[0]} felicitacion a toi.\n
                       il/elle a été nommé(e) administrateur du groupe.`
               await zk.groupParticipantsUpdate(dest, [auteurMsgRepondu], "promote");
               zk.sendMessage(dest, { text: txt, mentions: [auteurMsgRepondu] })
@@ -140,7 +140,7 @@ zokou({ nomCom: "nommer", categorie: "Groupe", reaction: "👨🏿‍💼" }, as
 //fin nommer
 /** ***demettre */
 
-zokou({ nomCom: "demettre", categorie: "Groupe", reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "demettre", categorie: "Groupe", reaction: "🫡" }, async (dest, zk, commandeOptions) => {
   let { repondre, msgRepondu, infosGroupe, auteurMsgRepondu, verifGroupe, auteurMessage, superUser, idBot } = commandeOptions;
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   if (!verifGroupe) { return repondre("Pour les groupe uniquement"); }
@@ -191,7 +191,7 @@ zokou({ nomCom: "demettre", categorie: "Groupe", reaction: "👨🏿‍💼" }, 
               repondre("Ce membre n'est pas un  administrateur du groupe.")
 
             } else {
-              var txt = `@${auteurMsgRepondu.split("@")[0]} a été  démis de ses fonctions d'administrateur du groupe..\n`
+              var txt = `@${auteurMsgRepondu.split("@")[0]} a été  démis des droits d'administrateur du groupe..\n`
               await zk.groupParticipantsUpdate(dest, [auteurMsgRepondu], "demote");
               zk.sendMessage(dest, { text: txt, mentions: [auteurMsgRepondu] })
             }
@@ -210,7 +210,7 @@ zokou({ nomCom: "demettre", categorie: "Groupe", reaction: "👨🏿‍💼" }, 
 
 /** ***fin démettre****  **/
 /** **retirer** */
-zokou({ nomCom: "retirer", categorie: "Groupe", reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "retirer", categorie: "Groupe", reaction: "🦵🏽" }, async (dest, zk, commandeOptions) => {
   let { repondre, msgRepondu, infosGroupe, auteurMsgRepondu, verifGroupe, nomAuteurMessage, auteurMessage, superUser, idBot } = commandeOptions;
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   if (!verifGroupe) { return repondre("Pour les groupe uniquement"); }
@@ -253,7 +253,7 @@ zokou({ nomCom: "retirer", categorie: "Groupe", reaction: "👨🏿‍💼" }, a
         if (zkad) {
           if (membre) {
             if (admin == false) {
-              const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif"
+              const gifLink = "https://raw.githubusercontent.com/DADDY-IGWE/Terra-MD/main/media/remover.gif"
               var sticker = new Sticker(gifLink, {
                 pack: '𝚃𝙴𝚁𝚁𝙰 𝙼𝙳', // The pack name
                 author: nomAuteurMessage, // The author name
@@ -387,7 +387,7 @@ zokou({ nomCom: "info", categorie: "Groupe" }, async (dest, zk, commandeOptions)
   if( superUser || verifAdmin) {
     const enetatoui = await verifierEtatJid(dest)
     try {
-      if (!arg || !arg[0] || arg === ' ') { repondre("*antilien oui* pour activer l'antilien\n*antilien non* pour desactiver l'antilien\n*antilien action/retier* pour retirer retirer directement sans preavis\n*antilien action/warn* pour donner des avertissement\n*antilien action/supp* pour supprimer uniquement le lien sans toutes fois sanctionner\n\nNotez que par defaut l'antilien est reglé sur supp") ; return};
+      if (!arg || !arg[0] || arg === ' ') { repondre("*antilien oui* pour activer l'antilien\n*antilien non* pour desactiver l'antilien\n*antilien action/retier* pour retirer retirer directement sans preavis\n*antilien action/warn* pour donner des avertissement\n*antilien action/supp* pour supprimer uniquement le lien sans toutes fois sanctionner\n\nNotez que par defaut l'antilien est reglé sur supp\n\nTERRA-MD") ; return};
      
       if(arg[0] === 'oui') {
 
@@ -396,14 +396,14 @@ zokou({ nomCom: "info", categorie: "Groupe" }, async (dest, zk, commandeOptions)
                     } else {
                   await ajouterOuMettreAJourJid(dest,"oui");
                 
-              repondre("l'antilien est activer avec succes") }
+              repondre("l'antilien est activer avec succes✅") }
      
             } else if (arg[0] === "non") {
 
               if (enetatoui) { 
                 await ajouterOuMettreAJourJid(dest , "non");
 
-                repondre("L'antilien a été desactivé avec succes");
+                repondre("L'antilien a été desactivé avec succes✅");
                 
               } else {
                 repondre("l'antilien n'est pas activer pour ce groupe");
@@ -812,7 +812,7 @@ zokou({nomCom:"annonce",categorie:"Groupe",reaction:"🎤"},async(dest,zk,comman
 });
 
 
-zokou({ nomCom: "apk", reaction: "✨", categorie: "Recherche" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "apk", reaction: "📦", categorie: "Recherche" }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
 
   try {

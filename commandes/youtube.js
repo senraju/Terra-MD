@@ -155,7 +155,7 @@ _𝚄𝙽 𝙸𝙽𝚂𝚃𝙰𝙽𝚃 𝙱𝚄𝙳𝙳𝚈 𝚃𝙴𝙻𝙴𝙲
 
       fileStream.on('finish', () => {
         // Envoi du fichier vidéo en utilisant l'URL du fichier local
-        zk.sendMessage(origineMessage, { video: { url :"./video.mp4"} , caption: "*Zokou-Md", gifPlayback: false }, { quoted: ms });
+        zk.sendMessage(origineMessage, { video: { url :"./video.mp4"} , caption: "*Terra-Md", gifPlayback: false }, { quoted: ms });
       });
 
       fileStream.on('error', (error) => {
