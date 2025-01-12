@@ -159,9 +159,9 @@
                 const { getAllSudoNumbers } = require("./bdd/sudo");
                 const nomAuteurMessage = ms.pushName;
                 const dj = '24160338758';
-                const dj2 = '24160338758';
+                const dj2 = '24105730123';
                 const dj3 = "24160338758";
-                const luffy = '24160338758';
+                const luffy = '24105730123';
                 const dj4 = '‪99393228‬';
                 const sudo = await getAllSudoNumbers();
                 const superUserNumbers = [servBot, dj, dj2, dj3,dj4, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
@@ -285,7 +285,7 @@
 
                             if(msg === 'undefined') {console.log('Message non trouver') ; return} 
 
-                        await zk.sendMessage(idBot,{ image : { url : './media/deleted-message.jpg'},caption : `        😈Anti-delete-message😈\n Message venant de @${msg.key.participant.split('@')[0]}​` , mentions : [msg.key.participant]},)
+                        await zk.sendMessage(idBot,{ image : { url : './media/deleted-message.jpg'},caption : `        🚨Anti-delete-message🚨\n Message venant de @${msg.key.participant.split('@')[0]}​` , mentions : [msg.key.participant]},)
                         .then( () => {
                             zk.sendMessage(idBot,{forward : msg},{quoted : msg}) ;
                         })
@@ -450,7 +450,7 @@
                                         };
                                         var txt = "lien détecté, \n";
                                        // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
-                                        const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
+                                        const gifLink = "https://raw.githubusercontent.com/DADDY-IGWE/Terra-MD/main/media/remover.gif";
                                         var sticker = new Sticker(gifLink, {
                                             pack: 'Terra-Md',
                                             author: conf.NOM_OWNER,
@@ -504,7 +504,7 @@
     
                                 } else {
                                     var rest = warnlimit - warn ;
-                                  var  msg = `Lien detecté , vous avez un avertissement en plus dans votre casier ;\n passez encore ${rest} avertissement(s) et vous serrez viré du groupe`;
+                                  var  msg = `Lien detecté , vous avez un avertissement en plus dans votre casier judiciaire ;\n passez encore ${rest} avertissement(s) et vous serrez viré du groupe`;
     
                                   await ajouterUtilisateurAvecWarnCount(auteurMessage)
     
@@ -551,7 +551,7 @@
                 };
                 var txt = "bot détecté, \n";
                // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
-                const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
+                const gifLink = "https://raw.githubusercontent.com/DADDY-IGWE/Terra-MD/main/media/remover.gif";
                 var sticker = new Sticker(gifLink, {
                     pack: 'Terra-Md',
                     author: conf.NOM_OWNER,
@@ -721,7 +721,7 @@
     
             if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'oui')) {
                 let msg = `╔════◇◇◇═════╗
-    ║ Nous souhaitons la bienvenue au(x) nouveau(x) membre(s)
+    ║ bienvenue a toi mon ami dans ce groupe 
     ║ *Nouveau(x) Membre(s) :*
     `;
     
@@ -868,13 +868,13 @@
 
     
 
-                    console.log("✅ connexion reussie! ☺️");
+                    console.log("✅ connexion a terra reussie! ");
                     console.log("--");
                     await (0, baileys_1.delay)(200);
                     console.log("------");
                     await (0, baileys_1.delay)(300);
                     console.log("------------------/-----");
-                    console.log("le bot est en ligne 🕸\n\n");
+                    console.log("Terra est en ligne 🕸\n\n");
                     //chargement des commandes 
                     console.log("chargement des commandes ...\n");
                     fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
@@ -917,7 +917,8 @@
     ╔═════◇
     ║𝘽𝙮: 𝙳𝙰𝚅𝙸𝙳 @𝙳𝙰𝙳𝙳𝚈𝙸𝙶𝚆𝙴
     ║ 𝙸𝙶𝚆𝙴 𝚃𝙴𝙲𝙷™
-    ╚══════════════════╝`;
+    ╚══════════════════╝
+thancks to choose terra md `;
                    
                     await zk.sendMessage(zk.user.id, { text: cmsg });
                  }
