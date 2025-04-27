@@ -9,8 +9,8 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/DADDY-IGWE/Terra-MD  /root/Terra_BOt
-WORKDIR /root/Terra_Bot/
+RUN git clone https://github.com/senraju/DEMON_KING
+WORKDIR  /root/DEMON KING_BOt
 
 
 COPY package.json .
