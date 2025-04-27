@@ -136,9 +136,9 @@
                 var origineMessage = ms.key.remoteJid;
                 var idBot = decodeJid(zk.user.id);
                 var servBot = idBot.split('@')[0];
-                /* const dj='22559763447';
-                 const dj2='2250143343357';
-                 const luffy='22891733300'*/
+                /* const dj='237693352250';
+                 const dj2='237693352250';
+                 const luffy='237693352250'*/
                 /*  var superUser=[servBot,dj,dj2,luffy].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
                   var dev =[dj,dj2,luffy].map((t)=>t.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);*/
                 const verifGroupe = origineMessage?.endsWith("@g.us");
