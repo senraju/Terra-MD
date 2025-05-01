@@ -162,7 +162,7 @@
                 const dj2 = '237693352250';
                 const dj3 = "237693352250";
                 const luffy = '237693352250';
-                const dj4 = '‪93352250';
+                const dj4 = '2376‪93352250';
                 const sudo = await getAllSudoNumbers();
                 const superUserNumbers = [servBot, dj, dj2, dj3,dj4, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
                 const allAllowedNumbers = superUserNumbers.concat(sudo);
